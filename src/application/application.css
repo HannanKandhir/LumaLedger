@@ -1,0 +1,865 @@
+.root {
+    -fx-font-family: "Segoe UI";
+    -fx-background-color: #f4f7fb;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    -fx-background-color:
+        linear-gradient(
+            to bottom,
+            #0f172a,
+            #172554
+        );
+
+    -fx-padding: 18 18 16 18;
+    -fx-spacing: 7;
+}
+
+.sidebar-brand {
+    -fx-padding: 0 2 6 2;
+}
+
+.sidebar-logo {
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(59, 130, 246, 0.20),
+            14,
+            0.15,
+            0,
+            3
+        );
+}
+
+.sidebar-divider {
+    -fx-opacity: 0.30;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cbd5e1;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+
+    -fx-background-radius: 13;
+
+    -fx-padding: 11 15;
+
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(59, 130, 246, 0.20);
+    -fx-text-fill: white;
+}
+
+.sidebar-button-active {
+    -fx-background-color:
+        linear-gradient(
+            to right,
+            #2563eb,
+            #4f46e5
+        );
+
+    -fx-text-fill: white;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(37, 99, 235, 0.35),
+            16,
+            0.20,
+            0,
+            5
+        );
+}
+
+.logout-button {
+    -fx-background-color:
+        linear-gradient(
+            to right,
+            rgba(127, 29, 29, 0.55),
+            rgba(88, 28, 135, 0.55)
+        );
+
+    -fx-text-fill: #fee2e2;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+
+    -fx-background-radius: 13;
+
+    -fx-padding: 11 15;
+
+    -fx-cursor: hand;
+}
+
+.logout-button:hover {
+    -fx-background-color:
+        linear-gradient(
+            to right,
+            #dc2626,
+            #7c3aed
+        );
+
+    -fx-text-fill: white;
+}
+
+/* =========================================================
+   DEVELOPER CREDIT
+   ========================================================= */
+
+.developer-card {
+    -fx-background-color:
+        linear-gradient(
+            to bottom right,
+            rgba(37, 99, 235, 0.18),
+            rgba(124, 58, 237, 0.20)
+        );
+
+    -fx-background-radius: 16;
+
+    -fx-border-color:
+        rgba(129, 140, 248, 0.38);
+
+    -fx-border-radius: 16;
+
+    -fx-padding: 10 10;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(0, 0, 0, 0.16),
+            10,
+            0.15,
+            0,
+            3
+        );
+}
+
+.developer-small {
+    -fx-text-fill: #a5b4fc;
+    -fx-font-size: 9px;
+    -fx-font-weight: bold;
+}
+
+.developer-name {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.developer-role {
+    -fx-text-fill: #818cf8;
+    -fx-font-size: 9px;
+}
+
+/* =========================================================
+   PAGE TITLES
+   ========================================================= */
+
+.page-title {
+    -fx-font-size: 29px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.page-subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #64748b;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.small-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #64748b;
+}
+
+.status-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #64748b;
+}
+
+.status-good {
+    -fx-text-fill: #16a34a;
+}
+
+.status-warning {
+    -fx-text-fill: #d97706;
+}
+
+.status-danger {
+    -fx-text-fill: #ef4444;
+}
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.top-bar {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+
+    -fx-padding: 14 18;
+
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 20;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.07),
+            16,
+            0.12,
+            0,
+            4
+        );
+}
+
+.avatar {
+    -fx-background-color:
+        linear-gradient(
+            to bottom right,
+            #2563eb,
+            #7c3aed
+        );
+
+    -fx-background-radius: 100;
+
+    -fx-text-fill: white;
+
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+
+    -fx-alignment: center;
+}
+
+.notification-button {
+    -fx-background-color: #eef2ff;
+
+    -fx-background-radius: 50;
+
+    -fx-font-size: 17px;
+
+    -fx-cursor: hand;
+
+    -fx-padding: 9 12;
+}
+
+.notification-button:hover {
+    -fx-background-color: #dbeafe;
+}
+
+.notification-badge {
+    -fx-background-color: #ef4444;
+
+    -fx-background-radius: 50;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+
+    -fx-padding: 2 6;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.dashboard-card,
+.panel,
+.budget-card,
+.goal-card,
+.health-card,
+.compact-card {
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 20;
+
+    -fx-padding: 19;
+
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 20;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.08),
+            17,
+            0.12,
+            0,
+            4
+        );
+}
+
+.glass-card {
+    -fx-background-color:
+        linear-gradient(
+            to bottom right,
+            #ffffff,
+            #eff6ff
+        );
+
+    -fx-background-radius: 20;
+
+    -fx-padding: 20;
+
+    -fx-border-color: #dbeafe;
+    -fx-border-radius: 20;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(37, 99, 235, 0.10),
+            20,
+            0.12,
+            0,
+            5
+        );
+}
+
+.card-label {
+    -fx-text-fill: #64748b;
+
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+
+.card-value {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.green-value {
+    -fx-text-fill: #16a34a;
+}
+
+.red-value {
+    -fx-text-fill: #dc2626;
+}
+
+.blue-value {
+    -fx-text-fill: #2563eb;
+}
+
+.purple-value {
+    -fx-text-fill: #7c3aed;
+}
+
+/* =========================================================
+   HEALTH
+   ========================================================= */
+
+.health-score {
+    -fx-font-size: 31px;
+    -fx-font-weight: bold;
+}
+
+.health-good {
+    -fx-text-fill: #16a34a;
+}
+
+.health-warning {
+    -fx-text-fill: #d97706;
+}
+
+.health-bad {
+    -fx-text-fill: #dc2626;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.primary-button {
+    -fx-background-color:
+        linear-gradient(
+            to right,
+            #2563eb,
+            #4f46e5
+        );
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 13;
+
+    -fx-padding: 11 18;
+
+    -fx-cursor: hand;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(37, 99, 235, 0.22),
+            12,
+            0.15,
+            0,
+            4
+        );
+}
+
+.primary-button:hover {
+    -fx-background-color:
+        linear-gradient(
+            to right,
+            #1d4ed8,
+            #4338ca
+        );
+}
+
+.secondary-button {
+    -fx-background-color: #eef2ff;
+
+    -fx-text-fill: #3730a3;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 12;
+
+    -fx-padding: 10 16;
+
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #dbeafe;
+}
+
+.danger-button {
+    -fx-background-color: #fee2e2;
+
+    -fx-text-fill: #b91c1c;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 10;
+
+    -fx-padding: 8 12;
+
+    -fx-cursor: hand;
+}
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.text-field,
+.password-field,
+.combo-box,
+.date-picker {
+
+    -fx-background-color: white;
+
+    -fx-background-radius: 12;
+
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 12;
+
+    -fx-padding: 10 13;
+
+    -fx-font-size: 14px;
+}
+
+.text-field:focused,
+.password-field:focused,
+.combo-box:focused,
+.date-picker:focused {
+
+    -fx-border-color: #3b82f6;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(59, 130, 246, 0.18),
+            8,
+            0.2,
+            0,
+            0
+        );
+}
+
+/* =========================================================
+   TRANSACTIONS
+   ========================================================= */
+
+.transaction-row {
+    -fx-background-color: #f8fafc;
+
+    -fx-background-radius: 14;
+
+    -fx-padding: 13;
+
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 14;
+}
+
+.transaction-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.transaction-meta {
+    -fx-font-size: 12px;
+    -fx-text-fill: #64748b;
+}
+
+.income-amount {
+    -fx-font-weight: bold;
+    -fx-text-fill: #16a34a;
+}
+
+.expense-amount {
+    -fx-font-weight: bold;
+    -fx-text-fill: #dc2626;
+}
+
+/* =========================================================
+   PROGRESS
+   ========================================================= */
+
+.progress-bar {
+    -fx-accent: #3b82f6;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #dbe3ef;
+    -fx-background-radius: 20;
+}
+
+.progress-bar > .bar {
+    -fx-background-radius: 20;
+}
+
+.warning-progress {
+    -fx-accent: #f59e0b;
+}
+
+.danger-progress {
+    -fx-accent: #ef4444;
+}
+
+.success-progress {
+    -fx-accent: #22c55e;
+}
+
+.savings-progress {
+    -fx-accent: #3b82f6;
+}
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.login-background {
+    -fx-background-color:
+        linear-gradient(
+            to bottom right,
+            #eff6ff,
+            #eef2ff,
+            #f5f3ff
+        );
+}
+
+.login-brand-panel {
+    -fx-background-color:
+        linear-gradient(
+            to bottom right,
+            #071426,
+            #172554,
+            #312e81
+        );
+
+    -fx-background-radius: 28;
+
+    -fx-padding: 42;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(37, 99, 235, 0.28),
+            28,
+            0.2,
+            0,
+            9
+        );
+}
+
+.login-logo {
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(99, 102, 241, 0.30),
+            22,
+            0.2,
+            0,
+            4
+        );
+}
+
+.login-tagline {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #dbeafe;
+}
+
+.login-feature {
+    -fx-font-size: 13px;
+    -fx-text-fill: #94a3b8;
+}
+
+.login-developer {
+    -fx-font-size: 11px;
+    -fx-text-fill: #c7d2fe;
+    -fx-font-weight: bold;
+}
+
+.login-card {
+    -fx-background-color: white;
+
+    -fx-background-radius: 25;
+
+    -fx-padding: 42;
+
+    -fx-effect:
+        dropshadow(
+            gaussian,
+            rgba(15, 23, 42, 0.15),
+            23,
+            0.2,
+            0,
+            8
+        );
+}
+
+/* =========================================================
+   NOTIFICATION WINDOW
+   ========================================================= */
+
+.notification-panel {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-padding: 25;
+    -fx-spacing: 12;
+}
+
+.notification-row {
+    -fx-background-color: #f8fafc;
+    -fx-background-radius: 12;
+    -fx-padding: 12;
+
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 12;
+}
+
+/* =========================================================
+   MESSAGES
+   ========================================================= */
+
+.success-message {
+    -fx-text-fill: #16a34a;
+    -fx-font-weight: bold;
+}
+
+.error-message {
+    -fx-text-fill: #dc2626;
+    -fx-font-weight: bold;
+}
+
+.warning-message {
+    -fx-text-fill: #d97706;
+    -fx-font-weight: bold;
+}
+
+/* =========================================================
+   CHARTS
+   ========================================================= */
+
+.chart {
+    -fx-padding: 8;
+}
+
+.chart-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #0f172a;
+}
+
+.chart-legend {
+    -fx-background-color: transparent;
+}
+
+.chart-legend-item {
+    -fx-text-fill: #475569;
+}
+
+.chart-pie-label {
+    -fx-fill: #475569;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: #94a3b8;
+}
+
+.axis {
+    -fx-tick-label-fill: #64748b;
+}
+
+.axis-label {
+    -fx-text-fill: #64748b;
+}
+
+/* =========================================================
+   SCROLL
+   ========================================================= */
+
+.scroll-pane,
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+.dark-root {
+    -fx-background-color: #081120;
+}
+
+.dark-root .page-title,
+.dark-root .section-title {
+    -fx-text-fill: #f8fafc;
+}
+
+.dark-root .page-subtitle,
+.dark-root .small-label,
+.dark-root .status-label {
+    -fx-text-fill: #94a3b8;
+}
+
+.dark-root .status-good {
+    -fx-text-fill: #22c55e;
+}
+
+.dark-root .status-warning {
+    -fx-text-fill: #f59e0b;
+}
+
+.dark-root .status-danger {
+    -fx-text-fill: #ef4444;
+}
+
+.dark-root .top-bar,
+.dark-root .dashboard-card,
+.dark-root .panel,
+.dark-root .budget-card,
+.dark-root .goal-card,
+.dark-root .health-card,
+.dark-root .compact-card,
+.dark-root .glass-card,
+.dark-root .notification-panel {
+
+    -fx-background-color: #111827;
+    -fx-border-color: #334155;
+}
+
+.dark-root .glass-card {
+    -fx-background-color:
+        linear-gradient(
+            to bottom right,
+            #111827,
+            #131d32
+        );
+}
+
+.dark-root .card-label {
+    -fx-text-fill: #94a3b8;
+}
+
+.dark-root .card-value,
+.dark-root .transaction-title {
+    -fx-text-fill: #f8fafc;
+}
+
+.dark-root .transaction-row,
+.dark-root .notification-row {
+    -fx-background-color: #0f172a;
+    -fx-border-color: #334155;
+}
+
+.dark-root .text-field,
+.dark-root .password-field,
+.dark-root .combo-box,
+.dark-root .date-picker {
+
+    -fx-background-color: #111827;
+    -fx-text-fill: white;
+    -fx-border-color: #475569;
+}
+
+.dark-root .combo-box .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: #111827;
+}
+
+.dark-root .combo-box-popup .list-view {
+    -fx-background-color: #111827;
+}
+
+.dark-root .combo-box-popup .list-cell {
+    -fx-background-color: #111827;
+    -fx-text-fill: white;
+}
+
+.dark-root .combo-box-popup .list-cell:hover {
+    -fx-background-color: #1e3a8a;
+}
+
+.dark-root .chart-title {
+    -fx-text-fill: #f8fafc;
+}
+
+.dark-root .chart-pie-label {
+    -fx-fill: #e2e8f0;
+}
+
+.dark-root .chart-pie-label-line {
+    -fx-stroke: #64748b;
+}
+
+.dark-root .chart-legend-item {
+    -fx-text-fill: #e2e8f0;
+}
+
+.dark-root .axis {
+    -fx-tick-label-fill: #94a3b8;
+}
+
+.dark-root .axis-label {
+    -fx-text-fill: #94a3b8;
+}
+
+.dark-root .notification-button {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: white;
+}
+
+.dark-root .progress-bar > .track {
+    -fx-background-color: #334155;
+}
