@@ -52,25 +52,15 @@ LumaLedger includes its own Java runtime.
 
 ### Login Screen
 
-LumaLedger includes a modern login experience with custom branding and secure account authentication.
+![LumaLedger Login Screen](login.png.png)
 
 ### Dashboard
 
-The dashboard gives users a quick overview of:
+![LumaLedger Dashboard](dahboard.png.png)
 
-- Current balance
-- Monthly income
-- Monthly expenses
-- Remaining budget
-- Financial health score
-- Smart financial insight
-- Savings progress
-- Budget status
-- Upcoming bills
-- Spending charts
+### Dashboard Overview
 
-> Screenshots will be added here soon.
-
+![LumaLedger Dashboard Overview](dashboard%20%282%29.png.png)
 ---
 
 ## 🚀 Installation
