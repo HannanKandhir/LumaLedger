@@ -1,0 +1,19 @@
+# Eclipse / Java build files
+bin/
+*.class
+
+# Local user data
+users.txt
+users_old.txt
+transactions_*.txt
+budgets_*.txt
+goals_*.txt
+bills_*.txt
+
+# Packaged files
+*.jar
+*.exe
+
+# OS files
+.DS_Store
+Thumbs.db
